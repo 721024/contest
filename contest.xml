@@ -28,7 +28,4 @@
       </block>
     </next>
   </block>
-  <block type="oled_linerect" id="305" x="195" y="1">
-    <field name="OBJECT">LINE</field>
-  </block>
 </xml>
