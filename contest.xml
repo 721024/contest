@@ -16,11 +16,19 @@
       <block type="controls_repeat" id="148" inline="true">
         <value name="TIMES">
           <block type="math_number" id="155">
-            <field name="NUM">50000</field>
+            <field name="NUM">90000</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_reverse" id="131"></block>
+          <block type="movement_left" id="327">
+            <next>
+              <block type="movement_right" id="337">
+                <next>
+                  <block type="movement_reverse" id="131"></block>
+                </next>
+              </block>
+            </next>
+          </block>
         </statement>
         <next>
           <block type="movement_stop" id="273"></block>
