@@ -20,14 +20,22 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_reverse" id="357">
-            <next>
-              <block type="movement_left" id="367"></block>
-            </next>
-          </block>
+          <block type="movement_reverse" id="357"></block>
         </statement>
         <next>
-          <block type="movement_stop" id="273"></block>
+          <block type="controls_repeat" id="374" inline="true">
+            <value name="TIMES">
+              <block type="math_number" id="381">
+                <field name="NUM">90000</field>
+              </block>
+            </value>
+            <statement name="DO">
+              <block type="movement_left" id="367"></block>
+            </statement>
+            <next>
+              <block type="movement_stop" id="273"></block>
+            </next>
+          </block>
         </next>
       </block>
     </next>
