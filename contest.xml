@@ -20,15 +20,7 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_left" id="327">
-            <next>
-              <block type="movement_right" id="337">
-                <next>
-                  <block type="movement_reverse" id="131"></block>
-                </next>
-              </block>
-            </next>
-          </block>
+          <block type="movement_left" id="327"></block>
         </statement>
         <next>
           <block type="movement_stop" id="273"></block>
