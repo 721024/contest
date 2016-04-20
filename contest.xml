@@ -20,7 +20,7 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_left" id="327"></block>
+          <block type="movement_right" id="347"></block>
         </statement>
         <next>
           <block type="movement_stop" id="273"></block>
