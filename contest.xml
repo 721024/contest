@@ -20,11 +20,7 @@
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_reverse" id="7">
-            <next>
-              <block type="movement_right" id="48"></block>
-            </next>
-          </block>
+          <block type="movement_reverse" id="7"></block>
         </statement>
         <next>
           <block type="controls_repeat" id="8" inline="true">
