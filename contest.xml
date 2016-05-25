@@ -2,7 +2,7 @@
   <block type="controls_repeat" id="1" inline="true" x="-141" y="-5407">
     <value name="TIMES">
       <block type="math_number" id="2">
-        <field name="NUM">90000</field>
+        <field name="NUM">10000</field>
       </block>
     </value>
     <statement name="DO">
@@ -12,36 +12,28 @@
       <block type="controls_repeat" id="4" inline="true">
         <value name="TIMES">
           <block type="math_number" id="5">
-            <field name="NUM">90000</field>
+            <field name="NUM">10000</field>
           </block>
         </value>
         <statement name="DO">
-          <block type="movement_right" id="6"></block>
+          <block type="movement_right" id="6">
+            <next>
+              <block type="movement_forward" id="23"></block>
+            </next>
+          </block>
         </statement>
         <next>
-          <block type="controls_repeat" id="7" inline="true">
+          <block type="controls_repeat" id="10" inline="true">
             <value name="TIMES">
-              <block type="math_number" id="8">
-                <field name="NUM">7000</field>
+              <block type="math_number" id="11">
+                <field name="NUM">300000</field>
               </block>
             </value>
             <statement name="DO">
-              <block type="movement_reverse" id="9"></block>
+              <block type="movement_forward" id="12"></block>
             </statement>
             <next>
-              <block type="controls_repeat" id="10" inline="true">
-                <value name="TIMES">
-                  <block type="math_number" id="11">
-                    <field name="NUM">0</field>
-                  </block>
-                </value>
-                <statement name="DO">
-                  <block type="movement_forward" id="12"></block>
-                </statement>
-                <next>
-                  <block type="movement_stop" id="13"></block>
-                </next>
-              </block>
+              <block type="movement_stop" id="13"></block>
             </next>
           </block>
         </next>
